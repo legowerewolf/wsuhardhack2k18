@@ -1,0 +1,29 @@
+{
+  "name": "wsuhardhack2k18",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/legowerewolf/wsuhardhack2k18.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/legowerewolf/wsuhardhack2k18/issues"
+  },
+  "homepage": "https://github.com/legowerewolf/wsuhardhack2k18#readme",
+  "devDependencies": {
+    "@types/node": "^10.11.7",
+    "@types/nodemailer": "^4.6.5",
+    "gulp": "^4.0.0",
+    "gulp-typescript": "^5.0.0-alpha.3",
+    "typescript": "^3.1.3"
+  },
+  "dependencies": {
+    "nodemailer": "^4.6.8"
+  }
+}
