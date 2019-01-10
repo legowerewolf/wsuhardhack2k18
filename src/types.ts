@@ -3,6 +3,10 @@ export interface ConfigData {
         server: string;
         username: string;
         password: string;
+    },
+    security: {
+        on: number;
+        off: number;
     }
 }
 

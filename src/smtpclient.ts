@@ -1,6 +1,5 @@
 import { createTransport } from "nodemailer";
 
-
 export class SMTPClient {
     transport: any;
 
@@ -14,7 +13,6 @@ export class SMTPClient {
                 pass: password
             }
         });
-        console.log(this.transport);
     }
 
     send(subject: string, plaintextContent?: string, htmlMessageContent?: string) {
@@ -35,7 +33,9 @@ export class SMTPClient {
                 return this.transport.sendMail(message);
             })
             .then((messageResult: any) => {
-                console.log(messageResult);
+                //console.log(messageResult);
+            }, (error: any) => {
+                console.log(error);
             })
     }
 }

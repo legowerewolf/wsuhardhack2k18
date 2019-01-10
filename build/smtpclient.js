@@ -12,7 +12,6 @@ class SMTPClient {
                 pass: password
             }
         });
-        console.log(this.transport);
     }
     send(subject, plaintextContent, htmlMessageContent) {
         plaintextContent = plaintextContent ? plaintextContent : '';
@@ -29,7 +28,9 @@ class SMTPClient {
             return this.transport.sendMail(message);
         })
             .then((messageResult) => {
-            console.log(messageResult);
+            //console.log(messageResult);
+        }, (error) => {
+            console.log(error);
         });
     }
 }
